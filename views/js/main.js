@@ -537,11 +537,12 @@ document.addEventListener('DOMContentLoaded', function() {
   var numPizzas = screen.height / ( Math.floor(i / cols) * s );
   var cols = 8;
   var s = 256;
-  // image element only needs to be created once as they are all the same image
-  var elem = document.createElement('img');
+  // eliminate variable instantiation time per iteration
+  var elem;
   // swap querySelector for better performing getElementById and pull out of loop
   var movingPizzas = document.getElementById("movingPizzas1");
   for (var i = 0; i < numPizzas; i++) {
+    elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
     elem.style.height = "100px";
