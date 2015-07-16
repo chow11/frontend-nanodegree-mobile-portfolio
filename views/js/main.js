@@ -533,10 +533,10 @@ window.addEventListener('scroll', updatePositions);
 
 // Generates the sliding pizzas when the page loads.
 document.addEventListener('DOMContentLoaded', function() {
-  // only create pizza images that fit on the screen
-  var numPizzas = screen.height / ( Math.floor(i / cols) * s );
   var cols = 8;
   var s = 256;
+  // only create pizza images that fit vertically on the screen
+  var numPizzas = screen.height / s * cols;
   // eliminate variable instantiation time per iteration
   var elem;
   // swap querySelector for better performing getElementById and pull out of loop
