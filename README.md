@@ -12,6 +12,13 @@ Contribute
 
 - Source Code: https://github.com/chow11/frontend-nanodegree-mobile-portfolio.git
 
+Instructions
+------------
+
+Browse to http://<hosting server fqdn>/index.html
+
+Click on the "Cam's Pizzeria" link to browse the menu
+
 Support
 -------
 
@@ -35,3 +42,5 @@ Change log
 
 ### minify HTML using PageSpeed Insights Chrome extension
 ### minify JS using http://jscompress.com/
+
+### optimization of views/js/main.js - see inline comments
